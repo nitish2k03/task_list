@@ -31,7 +31,7 @@ const Tasks = () => {
     <div className="">
       <Form addTasks={addTasks} />
       {tasks.map((task) => (
-        <List task={task} toggleTask={toggleTask} />
+        <List key={task.id} task={task} toggleTask={toggleTask} />
       ))}
     </div>
   );
