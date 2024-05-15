@@ -9,6 +9,7 @@ const Form = ({ addTasks }: FormProp) => {
     e.preventDefault();
     if (!text) {
       alert("Enter a task");
+      return;
     }
 
     addTasks({
